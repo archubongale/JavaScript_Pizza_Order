@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="http://cdn.jsdelivr.net/lodash/3.9.3/lodash.min.js"></script>
+  <script src="js/jquery-1.11.2.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Pizzaeria Port</title>
+</head>
+<body>
+  <div class="container">
+    <h1><img src="img/background-pizza.png" alt="pizza icon"> <span class="red">Pizzaeria Port</span> </h1>
+    <div class="row">
+      <div class="col-md-6">
+        <form id="new-order">
+            <h3>Customer Information:</h3>
+          <div class="form-group">
+            <label for="new-name">Name</label>
+            <input type="text" class="form-control" id="new-name">
+          </div>
+          <div class="form-group">
+            <label for="phone-number">Phone number</label>
+            <input type="text" class="form-control" id="phone-number">
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address">
+          </div>
+
+          <div class="form">
+            <label for="pizza-size" id="pizza-size"><h3>Size:</h3></label>
+            <br>
+            <label for="smallPizza">
+              <input id="smallPizza" type="radio" name="size" value="small"> Small
+            </label>
+            <br>
+            <label for="mediumPizza">
+              <input id="mediumPizza" type="radio" name="size" value="medium" checked> Medium
+            </label>
+            <br>
+            <label for="largePizza">
+              <input id="largePizza" type="radio" name="size" value="large"> Large
+            </label>
+            <br>
+            <label for="extraLargePizza">
+              <input id="extraLargePizza" type="radio" name="size" value="extraLarge"> Extra Large
+            </label>
+          </div>
+
+          <div class="form">
+            <label for="pizza-toppings" id="pizza-toppings"><h3>Toppings:</h3></label>
+            <br>
+            <label for="pepperoni">
+              <input type="checkbox" name="topping" id="pepperoni" value="Pepperoni"> Pepperoni
+            </label>
+            <br>
+            <label for="sausage">
+              <input type="checkbox" name="topping" id="sausage" value="Sausage"> Sausage
+            </label>
+            <br>
+            <label for="canadian-bacon">
+              <input type="checkbox" name="topping" id="canadian-bacon" value="Canadian Bacon"> Canadian Bacon
+            </label>
+            <br>
+            <label for="mushroom">
+              <input type="checkbox" name="topping" id="mushroom" value="Mushroom"> Mushroom
+            </label>
+            <br>
+            <label for="onion">
+              <input type="checkbox" name="topping" id="onion" value="Onion"> Onion
+            </label>
+            <br>
+            <label for="green-pepper">
+              <input type="checkbox" name="topping" id="green-pepper" value="Green Pepper"> Green Pepper
+            </label>
+            <br>
+          </div>
+
+          <div class="form">
+            <label for="pizza-quantity"><h3>Quantity:</h3></label>
+            <input value="1" type="number" name="quantity" id="pizza-quantity">
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary">Place order</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h3>Review Orders:</h3>
+        <span id="orders">
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+h1 {
+  text-align: left;
+  border-width: 4px;
+  border-style: solid;
+  padding: 10px;
+  border-radius: 20px;
+  border-color: red;
+  font-size: 75px;
+}
+
+div {
+  font-size: 18px;
+  color: black;
+}
+
+.red {
+  color: red;
+}
+
+img {
+  width: 200px;
+  padding: 20px;
+}
+
+.col-md-6 {
+  padding-right: 30px;
+}
+
+.btn {
+  background-color: red;
+  width: 50%;
+}
+
+body {
+  background-image: url("../img/background-2.jpg");
+}
